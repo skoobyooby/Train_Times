@@ -40,38 +40,17 @@
             <div class="text-left">
                 
                 <!-- Table -->
-                <table class="table">
+                <table class="table" id="train-table">
                   <thead>
                     <tr>
                       <th scope="col">Train Time</th>
-                      <th scope="col">Desitination</th>
+                      <th scope="col">Destination</th>
                       <th scope="col">Frequency (min)</th>
                       <th scope="col">Next Arrival</th>
                       <th scope="col">Minutes Away</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                      <td>@mdo</td>
-                    </tr>
                   </tbody>
                 </table>
                 <!-- End Table -->
@@ -98,16 +77,21 @@
                   <form>
                     <div class="form-group">
                       <label for="trainname">Train Name</label>
-                      <input type="text" class="form-control" id="trainname"  placeholder="Train Name">
+                      <input type="text" class="form-control" id="name-input">
                     </div>
                     <div class="form-group">
                       <label for="roleinput">Destination</label>
-                      <input type="text" class="form-control" id="destination" placeholder="Destination">
+                      <input type="text" class="form-control" id="destination-input">
+                    </div>
+                    <div class="form-group">
+                      <label for="roleinput">First Train Time (HH:mm - military time)</label>
+                      <input type="text" class="form-control" id="ftime-input">
                     </div>
                     <div class="form-group">
                       <label for="roleinput">Frequency (min)</label>
-                      <input type="number" class="form-control" id="frequency" placeholder="Frequency">
+                      <input type="number" class="form-control" id="frequency-input">
                     </div>
+                    <button type="submit" id="submit" class="btn btn-primary">Submit</button>
                   </form> 
 
                 </div>
@@ -117,10 +101,13 @@
         </div>
             <!-- End 2nd Panel -->
   </div>
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Javascript -->
-    <script src="assets/javascript/game.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="assets/javascript/app.js"></script>
+
+
   </body>
   
 </html>
