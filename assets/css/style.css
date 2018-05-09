@@ -1,0 +1,21 @@
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+.jumbotron {
+    background-image: url("../images/jumbotron.jpg");
+    background-size: cover;
+}
+.panel-heading {
+    background-color: black !important;
+    color: #ffffff !important;
+}
+.panel-default {
+    border-style: solid;
+    border-color: black;
+}
+
+.btn-primary {
+    background-color: black;
+}
