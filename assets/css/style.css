@@ -6,6 +6,8 @@
 .jumbotron {
     background-image: url("../images/jumbotron.jpg");
     background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 110px;
 }
 .panel-heading {
     background-color: black !important;
